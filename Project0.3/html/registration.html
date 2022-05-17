@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+
+            <div class="form-div">
+                <a href="#" class="sign-up form-a">Sign up</a>
+                <a href="#" class="sign-in form-a">Sign in</a>
+            </div>
+
+
+
+            <div class="form-sign-up">
+
+                <label for="name" class="form-label ">Name</label><br>
+                <input type="text" name="name" class="form-name form-input" placeholder="Damir">
+                <br>
+                <label for="surname" class="form-label ">Surname</label><br>
+                <input type="text" name="surname" placeholder="Velikii" class="form-surname form-input">
+                <br>
+                <label for="e-mail" class="form-label">E-mail</label><br>
+                <input type="text" name="e-mail" placeholder="givemegoodmark@mail.com" class="form-input form-input-email ">
+                <br>
+                <label for="password" class="form-label">Password</label><br>
+                <input type="password" name="password" class="form-input form-input-pass">
+                <br>
+                <label for="password" class="form-label">Repeat your password</label><br>
+                <input type="password" name="password" class="form-input form-input-pass-rep">
+
+
+            </div>
+
+            <div class="form-sign-in">
+                <label for="e-mail" class="form-label">E-mail</label><br>
+                <input type="text" name="e-mail" id="form-mail" class="form-input-sign-in form-input-email-sign-in" placeholder="givemegoodmark@mail.com">
+                <br>
+                <label for="password" class="form-label">Password</label><br>
+                <input type="password" name="password" class="form-input-pass-sign-in form-input-sign-in" id="form-password">
+
+
+            </div>
+            <a href="../index.html"class="form-sign-in-button">Sign in</a>
+            <a href="../index.html"class="form-button">Sign up</a>
+            
+        </form>
+
+
+        <div id="message">
+            <h3> Password must contain the following: </h3><br>
+            <p id="letter" class="invalid"> <b> lowercase </b> letter </p>
+            <p id="capital" class="invalid"> <b> capital (uppercase) </b> letter </p>
+            <p id="number" class="invalid"> <b> number </b> </p>
+            <p id="length" class="invalid"> Minimum <b> 8 characters </b> </p>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/page.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/sign_in.js"></script>
+    <script src="../js/registration.js"></script>
+    <script src="../js/validpass.js"></script>
+
+
+</body>
+
+</html>
